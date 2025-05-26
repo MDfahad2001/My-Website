@@ -9,3 +9,11 @@ body{
     color: black;
 }
 }
+
+.box{
+    background-color: azure;
+    color: black;
+    min-width: 100px;
+    text-align: center;
+
+}

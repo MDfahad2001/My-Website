@@ -14,8 +14,7 @@ body{
 .box{
     background-color: azure;
     color: black;
-    border: 10px;
-    border-color: black;
+    border: 10px solid black;
     text-align: center;
 
 }

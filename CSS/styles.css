@@ -2,3 +2,9 @@ body{
     background-color: aquamarine;
     color: black;
 }
+@media(min-width:700px){
+body{
+    background-color: red;
+    color: black;
+}
+}

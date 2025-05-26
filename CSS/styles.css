@@ -3,16 +3,19 @@ body{
     color: black;
 }
 
-@media (max-width:700px){
+@media (max-width:650px){
 body{
-    background-color: red;
-    color: black;
+    background-color: #b3f0ff;
+    color: #fff;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 }
 
 .box{
     background-color: azure;
     color: black;
+    border: 10px;
+    border-color: black;
     text-align: center;
 
 }

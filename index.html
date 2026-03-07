@@ -1,31 +1,197 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="CSS/styles.css">
-        <title>My website</title>
-    </head>
-    <body class="container">
-        <header>
-            <h1>Mohammed Al Fahad</h1>
-        </header>
-        <main>
-            <div class="row">
-                <div class="col-md-3 box">
-                    <h2>About</h2>
-                </div>
-                <div class="col-md-3 box">
-                    <h2>My projects</h2>
-                </div>
-                <div class="col-md-3 box">
-                    <h2>Contact</h2>
-                </div>
-            </div>
-            <p class="infotext">Hi my name is fahad,i am currently doing my post gradution in embedded system design from fanshawe college ,london,ontario.</p>
+<head>
+  <title>Fahad — Embedded Systems Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
 
-        </main>
-        <footer>
-            &copy; Mohammed Al Fahad 2025
-        </footer>
-    </body>
+  <nav>
+    <a href="#hero" class="nav-logo">FAH<span style="color:var(--muted)">AD</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-tag">Available for opportunities</div>
+    <h1 class="hero-name">Mohammed<br>Al <span>Fahad</span></h1>
+    <p class="hero-role">Embedded Systems & Software Developer</p>
+    <p class="hero-desc">
+      Electronics technician and firmware developer based in London, Ontario.
+      I build control systems, embedded firmware, and IoT applications — from hardware bring-up to deployment.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">2<span>+</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div>
+        <div class="stat-num">5<span>+</span></div>
+        <div class="stat-label">Hardware Projects</div>
+      </div>
+      <div>
+        <div class="stat-num">4<span>+</span></div>
+        <div class="stat-label">Protocols Mastered</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section-label reveal">// 01 — About</p>
+    <h2 class="section-title reveal">Who I Am</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm an electronics technician and embedded systems developer currently based in London, Ontario.
+          I completed my diploma in Electronics and Embedded Systems Development at Fanshawe College,
+          building on a B.Tech in Electronics and Communication Engineering from India.
+        </p>
+        <p>
+          I specialize in microcontroller firmware (C/C++), hardware debugging, and serial protocol
+          implementation across UART, SPI, I2C, and CAN. I enjoy working at the intersection of
+          hardware and software — from schematic reading and PCB layout to firmware bring-up and IoT integration.
+        </p>
+        <p>
+          When I'm not building things, I'm learning new tools. Currently exploring Qt, MATLAB, and
+          CODESys for industrial automation environments.
+        </p>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-chip">C / C++ / Embedded C</div>
+        <div class="skill-chip">ESP32 / PIC18F / Arduino</div>
+        <div class="skill-chip">UART / SPI / I2C / CAN</div>
+        <div class="skill-chip">Oscilloscope &amp; Logic Analyzer</div>
+        <div class="skill-chip">KiCad PCB Layout</div>
+        <div class="skill-chip">FreeRTOS / MQTT</div>
+        <div class="skill-chip">AWS IoT / Firebase</div>
+        <div class="skill-chip">Git / Linux</div>
+        <div class="skill-chip">Python / JavaScript</div>
+        <div class="skill-chip">Raspberry Pi</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects-inner">
+      <p class="section-label reveal">// 02 — Projects</p>
+      <h2 class="section-title reveal">What I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-num">01 — Capstone</div>
+          <div class="project-title">Project Aura</div>
+          <p class="project-desc">
+            Intelligent multi-node IoT lighting system built on ESP32 and Raspberry Pi 5.
+            Developed firmware for sensor acquisition, LED control, and RFID trigger logic.
+            Validated signal integrity with oscilloscope and logic analyzer. Integrated MQTT
+            communication with AWS IoT for cloud data flow.
+          </p>
+          <div class="project-tags">
+            <span class="tag">ESP32</span>
+            <span class="tag">Raspberry Pi 5</span>
+            <span class="tag">C/C++</span>
+            <span class="tag">MQTT</span>
+            <span class="tag">AWS IoT</span>
+            <span class="tag">PCB</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-num">02 — Embedded Control</div>
+          <div class="project-title">Greenhouse Environmental Control</div>
+          <p class="project-desc">
+            Two-node PIC18F-based control system managing temperature, humidity, CO2,
+            and actuator outputs. Mirrored a real-world industrial control panel environment.
+            Debugged hardware faults using UART serial monitoring and ADC signal tracing.
+            Designed and assembled PCB in KiCad.
+          </p>
+          <div class="project-tags">
+            <span class="tag">PIC18F</span>
+            <span class="tag">Embedded C</span>
+            <span class="tag">UART</span>
+            <span class="tag">KiCad</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">Actuators</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-num">03 — Professional</div>
+          <div class="project-title">Board-Level Repair &amp; Diagnostics</div>
+          <p class="project-desc">
+            Hardware fault diagnosis and repair at The Phone Stop, working daily with
+            multimeters, schematics, and diagnostic software. Documented non-conformances
+            and root cause analyses to maintain repair quality and traceability.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Schematics</span>
+            <span class="tag">Multimeter</span>
+            <span class="tag">Root Cause Analysis</span>
+            <span class="tag">QA</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div>
+      <p class="section-label reveal">// 03 — Contact</p>
+      <h2 class="section-title reveal">Get in Touch</h2>
+      <p class="contact-intro reveal">
+        I'm currently open to new opportunities — full-time roles, contract work,
+        or interesting collaborations in embedded systems and automation.
+        Don't hesitate to reach out.
+      </p>
+      <div class="contact-links reveal">
+        <a href="mailto:mhdalfahad01@gmail.com" class="contact-link">
+          <span class="contact-link-icon">&#9993;</span>
+          mhdalfahad01@gmail.com
+        </a>
+        <a href="tel:5199025697" class="contact-link">
+          <span class="contact-link-icon">&#9990;</span>
+          519-902-5697
+        </a>
+        <a href="https://www.linkedin.com/in/kmdalfahad/" target="_blank" class="contact-link">
+          <span class="contact-link-icon">in</span>
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-input" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Tell me about your project or opportunity..."></textarea>
+        </div>
+        <button class="btn-primary" style="align-self:flex-start" onclick="handleSubmit(event)">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; Mohammed Al Fahad 2026</span>
+    <span style="color:var(--accent); font-size:0.65rem; letter-spacing:0.1em;">EMBEDDED SYSTEMS DEVELOPER &mdash; LONDON, ON</span>
+  </footer>
+
+  <script src="Scripts/scripts.js"></script>
+</body>
 </html>

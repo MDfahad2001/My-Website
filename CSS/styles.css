@@ -335,6 +335,160 @@ h1.hero-name span { color: var(--accent); }
   text-transform: uppercase;
 }
 
+    #achievements {
+      padding: 7rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+
+    .achievement-role {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .achievement-role:first-of-type {
+      margin-top: 0;
+    }
+
+    .role-badge {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent, #e8ff47);
+      border: 1px solid var(--accent, #e8ff47);
+      padding: 0.3em 0.75em;
+      white-space: nowrap;
+    }
+
+    .role-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--accent, #e8ff47) 0%, transparent 100%);
+      opacity: 0.25;
+    }
+
+    .role-title-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .role-org {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text, #f5f5f0);
+      line-height: 1.1;
+    }
+
+    .role-period {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted, #888);
+      letter-spacing: 0.12em;
+    }
+
+
+    .achievement-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      padding: 1.5rem 1.75rem;
+      position: relative;
+      transition: border-color 0.25s, background 0.25s;
+      overflow: hidden;
+    }
+
+    .achievement-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--accent, #e8ff47);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    .achievement-card:hover {
+      background: rgba(232,255,71,0.04);
+      border-color: rgba(232,255,71,0.2);
+    }
+
+    .achievement-card:hover::before {
+      opacity: 1;
+    }
+
+    .achievement-icon {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--accent, #e8ff47);
+      letter-spacing: 0.15em;
+      margin-bottom: 0.75rem;
+      opacity: 0.8;
+    }
+
+    .achievement-text {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.82rem;
+      line-height: 1.75;
+      color: var(--muted, #aaa);
+    }
+
+    .achievement-text strong {
+      color: var(--text, #f5f5f0);
+      font-weight: 700;
+    }
+
+    .achievement-card.wide {
+      grid-column: 1 / -1;
+    }
+
+    .ach-stats {
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.75rem;
+    }
+
+    .ach-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .ach-stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent, #e8ff47);
+      line-height: 1;
+    }
+
+    .ach-stat-num span {
+      font-size: 1rem;
+      opacity: 0.6;
+    }
+
+    .ach-stat-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: var(--muted, #888);
+      text-transform: uppercase;
+    }
 
 #contact {
   padding: 6rem 3rem;

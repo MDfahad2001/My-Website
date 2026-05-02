@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects — Fahad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/projects.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">FAH<span style="color:var(--muted)">AD</span></a>
+    <a href="index.html" class="nav-back">← Back to Portfolio</a>
+  </nav>
+
+  <div class="page-header">
+    <p class="page-label">Projects</p>
+    <h1 class="page-title">What I've Built</h1>
+    <p class="page-subtitle">Hardware and firmware projects spanning IoT, embedded control, and professional electronics repair.</p>
+  </div>
+
+  <div class="page-content">
+
+    <!-- PROJECT 1 -->
+    <div class="project-detail reveal" id="aura">
+      <div class="project-meta">
+        <div class="project-num">01 — Capstone Project</div>
+        <div class="project-name">Project Aura</div>
+        <div class="project-tags">
+          <span class="tag">ESP32</span>
+          <span class="tag">Raspberry Pi 5</span>
+          <span class="tag">C / C++</span>
+          <span class="tag">MQTT</span>
+          <span class="tag">PCB Design</span>
+          <span class="tag">RFID</span>
+          <span class="tag">FreeRTOS</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <h3>Overview</h3>
+        <p>
+          Project Aura is an intelligent multi-node IoT lighting system developed as a capstone project at Fanshawe College.
+          The system uses ESP32 microcontrollers as distributed sensor nodes and a Raspberry Pi 5 as the central hub,
+          all communicating over MQTT.
+        </p>
+        <h3>Key Contributions</h3>
+        <div class="highlight-row">
+          <div class="highlight-chip">Firmware: sensor acquisition &amp; LED control</div>
+          <div class="highlight-chip">RFID trigger logic implementation</div>
+          <div class="highlight-chip">Signal validation with oscilloscope &amp; logic analyzer</div>
+          <div class="highlight-chip">Custom PCB design</div>
+        </div>
+        <h3>Technical Details</h3>
+        <p>
+          Firmware was written in C/C++ and structured around FreeRTOS tasks to handle concurrent sensor reads,
+          LED PWM control, and RFID event detection without blocking. Serial communication was validated using a
+          logic analyzer to confirm correct I²C and SPI timing before final integration.
+          The cloud pipeline used MQTT topics to publish sensor data, which AWS IoT rules forwarded to storage
+          and alerting services.
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-detail reveal" id="greenhouse">
+      <div class="project-meta">
+        <div class="project-num">02 — Embedded Control</div>
+        <div class="project-name">Greenhouse Environmental Control</div>
+        <div class="project-tags">
+          <span class="tag">PIC18F</span>
+          <span class="tag">Embedded C</span>
+          <span class="tag">UART</span>
+          <span class="tag">ADC</span>
+          <span class="tag">KiCad</span>
+          <span class="tag">Sensors</span>
+          <span class="tag">Actuators</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <h3>Overview</h3>
+        <p>
+          A two-node PIC18F-based embedded control system designed to mirror a real-world industrial greenhouse
+          control panel. The system monitors temperature, humidity, and CO₂ levels and drives actuator outputs
+          (fans, heaters, irrigation) based on programmable setpoints.
+        </p>
+        <h3>Key Contributions</h3>
+        <div class="highlight-row">
+          <div class="highlight-chip">Dual-node PIC18F firmware</div>
+          <div class="highlight-chip">UART inter-node communication</div>
+          <div class="highlight-chip">ADC signal tracing &amp; fault debugging</div>
+          <div class="highlight-chip">PCB designed &amp; assembled in KiCad</div>
+          <div class="highlight-chip">Industrial control panel simulation</div>
+        </div>
+        <h3>Technical Details</h3>
+        <p>
+          The two nodes communicated via UART, with one acting as a sensor aggregator and the other
+          as the actuator controller. Hardware faults were diagnosed using UART serial monitoring and
+          oscilloscope traces on the ADC input lines. The final PCB was designed from schematic to layout
+          in KiCad and hand-assembled with SMD components.
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-detail reveal" id="repair">
+      <div class="project-meta">
+        <div class="project-num">03 — Professional</div>
+        <div class="project-name">Board-Level Repair &amp; Diagnostics</div>
+        <div class="project-tags">
+          <span class="tag">Schematics</span>
+          <span class="tag">Multimeter</span>
+          <span class="tag">Diagnostic SW</span>
+          <span class="tag">Root Cause Analysis</span>
+          <span class="tag">QA Documentation</span>
+        </div>
+      </div>
+      <div class="project-body">
+        <h3>Overview</h3>
+        <p>
+          Professional hardware repair and diagnostics role at The Phone Stop in London, Ontario.
+          Daily work involved identifying and resolving board-level faults on consumer electronics
+          using schematics, multimeters, and proprietary diagnostic software.
+        </p>
+        <h3>Key Contributions</h3>
+        <div class="highlight-row">
+          <div class="highlight-chip">Component-level fault isolation</div>
+          <div class="highlight-chip">Schematic-guided diagnosis</div>
+          <div class="highlight-chip">Non-conformance documentation</div>
+          <div class="highlight-chip">Root cause analysis reports</div>
+          <div class="highlight-chip">Repair quality &amp; traceability</div>
+        </div>
+        <h3>Technical Details</h3>
+        <p>
+          Fault isolation typically involved tracing power rails and signal lines against schematics
+          to identify failed passives, ICs, or connectors. All repairs were documented with root cause
+          analysis notes to maintain traceability and identify recurring failure patterns.
+          This role sharpened systematic debugging skills directly applicable to embedded hardware bring-up.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>&copy; Mohammed Al Fahad 2026</span>
+    <span style="color:var(--accent); font-size:0.65rem; letter-spacing:0.1em;">EMBEDDED SYSTEMS DEVELOPER</span>
+  </footer>
+  <script src="Scripts/scripts.js"></script>
+</body>
+</html>
